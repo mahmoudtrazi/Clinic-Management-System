@@ -1,0 +1,32 @@
+ClinicManagementSystem/
+│
+├── Database/
+│   └── ClinicDB_Setup.sql          ← Run first in SSMS
+│
+├── ClinicManagementSystem.sln      ← Visual Studio Solution
+│
+└── ClinicManagementSystem/         ← Main C# Project
+    ├── ClinicManagementSystem.csproj
+    │
+    ├── Program.cs                  ← Entry point
+    │
+    ├── Models/                     ← Plain C# entity classes
+    │   ├── Patient.cs
+    │   └── Appointment.cs
+    │
+    ├── Data/                       ← Database access layer
+    │   └── DatabaseManager.cs
+    │
+    ├── Forms/                      ← All WinForms
+    │   ├── LoginForm.cs / .Designer.cs / .resx
+    │   ├── DashboardForm.cs / .Designer.cs / .resx
+    │   ├── PatientsForm.cs / .Designer.cs / .resx
+    │   ├── AppointmentsForm.cs / .Designer.cs / .resx
+    │   ├── SearchFilterForm.cs / .Designer.cs / .resx
+    │   └── ReportsForm.cs / .Designer.cs / .resx
+    │
+    ├── Helpers/
+    │   └── Validator.cs            ← Reusable validation logic
+    │
+    └── Properties/
+        └── Settings.settings       ← Connection string storage

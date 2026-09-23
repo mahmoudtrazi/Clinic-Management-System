@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Target .NET Framework 4.8 for maximum WinForms compatibility -->
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>ClinicManagementSystem</AssemblyName>
+    <RootNamespace>ClinicManagementSystem</RootNamespace>
+    <LangVersion>8.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <Deterministic>true</Deterministic>
+    <ApplicationIcon />
+    <StartupObject>ClinicManagementSystem.Program</StartupObject>
+  </PropertyGroup>
+
+  <!-- === NuGet Packages === -->
+  <ItemGroup>
+    <!--
+      System.Data.SqlClient is included in .NET Framework 4.8.
+      No extra NuGet package is required for SqlConnection.
+      If targeting .NET 6+ (net6.0-windows), add:
+        <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.1" />
+      and update 'using System.Data.SqlClient' → 'using Microsoft.Data.SqlClient'.
+    -->
+  </ItemGroup>
+
+</Project>
